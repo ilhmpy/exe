@@ -1,12 +1,15 @@
 // импорты шрифтов
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); // roboto regular
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap'); // raleway extra-bold
 
 
 // цвета
 $panel-bg: #111111;
 $interface-color: #252525;
-$panel-color: #252525;
+$panel-color: #636363;
 $red-color: #e5493a;
+$links-color: #707070;
 
 // шрифты
 $roboto: 'Roboto', sans-serif;
+$raleway: 'Raleway', sans-serif;

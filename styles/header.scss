@@ -9,7 +9,7 @@
   width: 100%;
   height: 40px;
   background: $panel-bg;
-  font-size: .70em;
+  font-size: .60em;
 }
 
 .panel__container {
@@ -28,9 +28,6 @@
   &:first-child {
     margin-left: 0;
   }
-  &:nth-child(1) i {
-    margin-top: -5px;
-  }
   &:hover {
     color: $red-color;
   }
@@ -39,14 +36,71 @@
 .panel__container {
   display: grid;
   grid-template-columns: repeat(2, 50%);
+  grid-gap: 60px;
 }
 
-.panel__socials {
+.socials__item {
+  @extend .panel__contacts-item;
+}
 
+.socials__item span {
+  color: #6d6d6d;
+}
+
+.socials__item:nth-child(1) span {
+  color: $panel-color;
+}
+
+.socials__item:nth-child(1) span:hover {
+  color: #74a335;
+}
+
+.soc-icons {
+  margin-left: 3px;
+}
+
+.soc-icons:hover i {
+  color: $red-color;
+}
+
+.panel__contacts-item i {
+  color: #363636;
 }
 
 .header__nav {
   width: 100%;
   height: 105px;
   background: $interface-color;
+  border-bottom: 3px solid #44464a;
+  font-family: $raleway;
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+  }
+}
+
+.header__container {
+  display: grid;
+  grid-template-columns: 25% 65%;
+  padding: 30px 0px 30px 0px;
+}
+
+.header__nav-links {
+  display: flex;
+  padding-top: 14px;
+}
+
+.header__nav-link {
+  display: block;
+  color: $links-color;
+  font-size: .60em;
+  margin-left: 3%;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:hover {
+    color: $red-color;
+  }
 }
