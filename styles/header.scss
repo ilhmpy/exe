@@ -83,7 +83,7 @@
 
 .header__container {
   display: grid;
-  grid-template-columns: 25% 65%;
+  grid-template-columns: 13% 78% 10%;
   padding: 30px 0px 30px 0px;
 }
 
@@ -96,11 +96,37 @@
   display: block;
   color: $links-color;
   font-size: .60em;
-  margin-left: 3%;
-  &:first-child {
-    margin-left: 0;
-  }
+  margin-left: 38px;
+  user-select: none;
   &:hover {
     color: $red-color;
   }
+}
+
+.header__nav-link i {
+  margin-top: -1px;
+  position: absolute;
+  margin-left: 5px;
+}
+
+.header__items {
+  color: $panel-color;
+  font-size: .75em;
+  display: flex;
+  cursor: pointer;
+  padding: 13px 0px 0px 30px;
+}
+
+.header__items i {
+  margin-left: 15%;
+}
+
+.falling-menu {
+  margin-top: 34px;
+  margin-left: 175px;
+  width: 90px;
+  height: 62px;
+  background: $panel-bg;
+  position: absolute;
+  color: #fff;
 }
