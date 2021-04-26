@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>exe</title>
     <link rel="stylesheet" href="./styles/normalize.css">
-    <!-- временные файлы перед сборкой -->
-    <link rel="stylesheet" href="./styles/header.min.css">
     <!-- главный файл в верхушке зависимостей проекта -->
     <link rel="stylesheet" href="./styles/main.min.css">
+    <!-- временные файлы перед сборкой -->
+    <link rel="stylesheet" href="./styles/header.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -18,13 +18,17 @@
         <!-- header -->
         <header class="header">
           <div class="header__panel">
-            <div class="container header__container">
+            <div class="container panel__container">
               <div class="panel__contacts">
-                <a href="#" class="panel__contacts-item"><i class="fas fa-globe"></i> English <i class="fas fa-sort-down"></i></a>
+                <a class="panel__contacts-item"><i class="fas fa-globe"></i> English <i class="fas fa-sort-down"></i></a>
                 <a href="#" class="panel__contacts-item"><i class="fas fa-mobile-alt"></i> +440 875369208</a>
                 <a href="#" class="panel__contacts-item"><i class="fab fa-telegram-plane"></i> info@sitename.com</a>
               </div>
-              <div class="panel__socials"></div>
+              <div class="panel__socials">
+                <a class="socials__item">Sign In/Register</a>
+                <a href="#" class="socials__item">Wishlist: <span>0 items</span></a>
+                <a href="#" class="socials__item"></a>
+              </div>
             </div>
           </div>
           <div class="header__nav">

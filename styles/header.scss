@@ -9,18 +9,41 @@
   width: 100%;
   height: 40px;
   background: $panel-bg;
+  font-size: .70em;
+}
 
+.panel__container {
+  padding: 10px 10px 0px 10px;
+}
+
+.header__panel a {
   color: $panel-color;
 }
 
-.panel__contacts {
+.panel__contacts-item {
+  cursor: pointer;
+  margin-left: 7%;
+  word-spacing: 5px;
+  transition: .50s;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:nth-child(1) i {
+    margin-top: -5px;
+  }
+  &:hover {
+    color: $red-color;
+  }
+}
 
+.panel__container {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
 }
 
 .panel__socials {
 
 }
-
 
 .header__nav {
   width: 100%;
