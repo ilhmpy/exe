@@ -1,7 +1,11 @@
 class Scripts {
   constructor() {
+    // бинды контекста this класса на методы
     this.changeMenu = this.changeMenu.bind(this);
+    this.changePagination = this.changePagination.bind(this);
+    this.changeSlide = this.changeSlide.bind(this);
   }
+
   changeMenu(object, menu, mode = true) {
     if (mode) {
       object.addClass("times");
@@ -18,6 +22,22 @@ class Scripts {
       });
       setTimeout(() => menu.css("display", "none"), 1000);
     };
+  };
+
+  changePagination(btns, selector, frame) {
+    selector.forEach(btn => btn.classList.remove("activePag"));
+    btns[frame].classList.add("activePag");
+  };
+
+  changeSlide(massive, index, selector) {
+    selector.css("opacity", "20%");
+    setTimeout(() => {
+      selector.css({
+        "opacity":"100%",
+        "background": `url(${massive[index]}) center no-repeat`,
+        "background-size": "cover"
+      });
+    }, 300);
   };
 };
 

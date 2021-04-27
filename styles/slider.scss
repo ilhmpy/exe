@@ -1,0 +1,134 @@
+@import "./vars.scss";
+
+.slider {
+  width: 100%;
+  height: 798px;
+  background: url("../images/slide1.png") no-repeat center;
+  background-size: cover;
+  font-family: $raleway;
+  transition: .10s;
+}
+
+.slider__text-box {
+  width: 600px;
+  height: 300px;
+  display: block;
+  float: right;
+  margin-top: 250px;
+}
+
+.slider__title {
+  color: #fff;
+  letter-spacing: 0px;
+  font-size: 3em;
+  padding: 0;
+  margin: 0;
+}
+
+.slider__sub-title {
+  line-height: 18px;
+  color: #fff;
+  padding: 0;
+  font-size: 1.55em;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.slider__sub-title span {
+  color: $red-color;
+}
+
+.slider__about {
+  color: #555;
+  line-height: 20px;
+  text-transform: uppercase;
+  font-size: .80em;
+  margin-bottom: 40px;
+}
+
+.slider__buttons {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.slider__button {
+  display: block;
+  width: 170px;
+  height: inherit;
+  background: $red-color;
+  border: 1px solid $red-color;
+  border-radius: 5px;
+  font-size: .60em;
+  text-align: center;
+  margin-left: 30px;
+  transition: .50s;
+  color: #fff;
+  &:first-child {
+    margin-left: 0px;
+  }
+  &:hover {
+    background: 0;
+    color: $red-color;
+  }
+  &:nth-child(2) {
+    border: 1px solid #fff;
+    color: #fff;
+    background: 0;
+  }
+  &:nth-child(2):hover {
+    color: $red-color;
+    background: #fff;
+  }
+}
+
+.slider__arrows {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  margin-top: 349px;
+}
+
+.slider__arrow {
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  background: #37393d;
+  font-size: .70em;
+  transition: .50s;
+  padding-top: 3px;
+  color: #fff;
+  position: absolute;
+  &:nth-child(1) {
+    margin-left: -130px;
+  }
+  &:nth-child(2) {
+    margin-left: 1135px;
+  }
+}
+
+.activeArrow {
+  background: $red-color;
+}
+
+.slider__pagination {
+  width: 80px;
+  height: 15px;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  margin-top: 750px;
+}
+
+.slider__pagination-btn {
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  background: #fff;
+  margin-left: 4%;
+}
+
+.activePag {
+  background: $red-color;
+}
