@@ -1,0 +1,1 @@
+@keyframes slideDown{0%{transform:translateY(-500px)}100%{transform:translateY(105px)}}@keyframes slideUp{0%{transform:translateY(105px)}100%{transform:translateY(-500px)}}

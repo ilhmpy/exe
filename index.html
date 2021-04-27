@@ -2,12 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exe</title>
     <link rel="stylesheet" href="./styles/normalize.css">
     <!-- главный файл в верхушке зависимостей проекта -->
     <link rel="stylesheet" href="./styles/main.min.css">
-    <link rel="stylesheet" href="./styles/header.min.css">
     <!-- временные файлы перед сборкой -->
+    <link rel="stylesheet" href="./styles/header.min.css">
+    <link rel="stylesheet" href="./styles/media/media-header.min.css">
+    <link rel="stylesheet" href="./styles/animations.min.css">
+    <link rel="stylesheet" href="./styles/slider.min.css">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
@@ -43,17 +47,33 @@
               <div class="header__logo">
                 <img src="./images/exe.png" alt="exe logo">
               </div>
+              <div class="header__bar">
+                <span></span>
+              </div>
               <nav class="header__nav-links">
-                <a href="#" class="header__nav-link">HOME <i class="fas fa-sort-down"></i></a>
+                <a href="#" class="header__nav-link" id="f">
+                  HOME <i class="fas fa-sort-down"></i>
+                  <div class="falling-menu" id="f-menu">
+                    <a href="#" class="falling__link">SEARCH</a>
+                    <a href="#" class="falling__link">CONNECT</a>
+                    <a href="#" class="falling__link">ABOUT</a>
+                  </div>
+                </a>
                 <a href="#" class="header__nav-link">ABOUT US</a>
-                <a href="#" class="header__nav-link">PAGES <i class="fas fa-sort-down"></i></a>
+                <a href="#" class="header__nav-link" id="s">
+                  PAGES <i class="fas fa-sort-down"></i>
+                  <div class="falling-menu t-m" id="s-menu">
+                    <a href="#" class="falling__link">CONNECT</a>
+                    <a href="#" class="falling__link">SEARCH</a>
+                    <a href="#" class="falling__link">ABOUT</a>
+                  </div>
+                </a>
                 <a href="#" class="header__nav-link">FEATUARES</a>
                 <a href="#" class="header__nav-link">PORTFOLIO</a>
                 <a href="#" class="header__nav-link">BLOG</a>
                 <a href="#" class="header__nav-link">SHOP</a>
                 <a href="#" class="header__nav-link">CONTACTS</a>
               </nav>
-              <div class="falling-menu"></div>
               <div class="header__items">
                 <i class="fas fa-shopping-cart cart"></i>
                 <i class="fas fa-search"></i>
@@ -61,6 +81,24 @@
             </div>
           </div>
         </header>
+        <div class="upfalling__menu">
+          <div class="upfalling__header">
+            <div class="panel__contacts">
+              <a href="#" class="panel__contacts-item"><i class="fas fa-mobile-alt"></i> +440 875369208</a>
+              <a href="#" class="panel__contacts-item"><i class="fab fa-telegram-plane"></i> info@sitename.com</a>
+            </div>
+          </div>
+          <div class="upfalling__links">
+            <a href="#" class="header__nav-link">HOME</a>
+            <a href="#" class="header__nav-link">ABOUT US</a>
+            <a href="#" class="header__nav-link">PAGES</a>
+            <a href="#" class="header__nav-link">FEATUARES</a>
+            <a href="#" class="header__nav-link">PORTFOLIO</a>
+            <a href="#" class="header__nav-link">BLOG</a>
+            <a href="#" class="header__nav-link">SHOP</a>
+            <a href="#" class="header__nav-link">CONTACTS</a>
+          </div>
+        </div>
       </main>
       <!-- jquery и javascript файлы -->
       <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="

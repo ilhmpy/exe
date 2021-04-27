@@ -1,0 +1,148 @@
+@import "../vars.scss";
+@import "../animations.scss";
+
+@media only screen and (max-device-width: 1024px) {
+  .header__nav-links {
+    display: none;
+  }
+  .header__items {
+    display: none;
+  }
+  .header__panel {
+    display: none;
+  }
+  .header__bar {
+    display: block;
+  }
+  .header__container {
+    z-index: 999999999999999999999;
+    grid-template-columns: repeat(2, 50%);
+  }
+  .header {
+    height: 105px;
+    position: absolute;
+    z-index: 9999999999999999;
+  }
+  .header__nav {
+    height: inherit;
+  }
+  .header__bar {
+    display: block;
+    position: absolute;
+    right: 35px;
+    width: 30px;
+    height: 50px;
+  }
+  .header__bar span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    margin-top: 20px;
+    border-radius: 1px;
+    background: $red-color;
+    transition: .50s;
+  }
+  .header__bar span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    width: 30px;
+    height: 3px;
+    border-radius: inherit;
+    background: inherit;
+    transition: inherit;
+    margin-top: -10px;
+  }
+  .header__bar span::after {
+    content: "";
+    display: block;
+    width: inherit;
+    transition: inherit;
+    height: inherit;
+    position: absolute;
+    border-radius: inherit;
+    background: inherit;
+    margin-top: 12px;
+  }
+  .upfalling__menu {
+    width: 100%;
+    height: 500px;
+    z-index: -1;
+    background: $interface-color;
+  }
+  .upfalling__header {
+    width: 100%;
+    height: 30px;
+    font-size: .50em;
+    background: $panel-bg;
+    padding: 9px 20px 0px 35px;
+  }
+  .upfalling__header a {
+    color: #fff;
+  }
+  .upfalling__header i {
+    color: #fff;
+  }
+  .upfalling__links {
+    width: 100%;
+    height: 450px;
+    display: block;
+  }
+  .upfalling__links .header__nav-link {
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    margin-left: 0px;
+    padding: 13px 0px 0px 35px;
+    &:first-child {
+      margin-top: 10px;
+    }
+    &:hover {
+      background: $red-color;
+      color: #fff;
+    }
+  }
+  .times span {
+    width: 0px;
+    margin-top: 30px;
+  }
+  .times span::before {
+    width: 30px;
+    transform: rotate(-45deg);
+  }
+  .times span::after {
+    width: 30px;
+    margin-top: -9px;
+    transform: rotate(45deg);
+  }
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 700px) {
+  .upfalling__links .header__nav-link {
+    padding-left: 55px;
+  }
+  .upfalling__header {
+    padding-left: 54px;
+  }
+}
+
+@media only screen and (min-device-width: 701px) and (max-device-width: 900px) {
+  .upfalling__links .header__nav-link {
+    padding-left: 77px;
+  }
+  .upfalling__header {
+    padding-left: 80px;
+  }
+}
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1024px) {
+  .upfalling__links .header__nav-link {
+    padding-left: 93px;
+  }
+  .upfalling__header {
+    padding-left: 92px;
+  }
+}

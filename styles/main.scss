@@ -1,6 +1,11 @@
 // импорты для сборки проекта
-/*@import "./header.scss";
+/*
+  @import "./header.scss";
+  @import "./media/media-header.scss";
+  @import "./media/media-slider.scss";
+  @import "./slider.scss";
 */
+
 @import "./vars.scss";
 
 /***********************************/
@@ -46,4 +51,17 @@ button {
   height: inherit;
   max-width: 1230px;
   margin: 0 auto;
+}
+
+// элементы скрытые на разных устройствах
+.header__bar {
+  display: none;
+}
+
+.upfalling__menu {
+  display: none;
+}
+
+.upfalling__links {
+  display: none;
 }

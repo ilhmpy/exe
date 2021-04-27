@@ -123,10 +123,29 @@
 
 .falling-menu {
   margin-top: 34px;
-  margin-left: 175px;
-  width: 90px;
-  height: 62px;
-  background: $panel-bg;
+  margin-left: 30px;
+  display: none;
+  width: 155px;
+  height: 91px;
+  background: $interface-color;
   position: absolute;
   color: #fff;
+}
+
+.falling__link {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-top: 5px;
+  font-size: .60em;
+  padding-left: 10px;
+  color: $links-color;
+  &:hover {
+    background: $red-color;
+    color: #fff;
+  }
+}
+
+.t-m {
+  margin-left: 229px;
 }
