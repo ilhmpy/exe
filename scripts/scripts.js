@@ -37,7 +37,7 @@ class Scripts {
         "background": `url(${massive[index]}) center no-repeat`,
         "background-size": "cover"
       });
-    }, 300);
+    }, 200);
   };
 };
 
